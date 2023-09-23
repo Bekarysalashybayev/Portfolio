@@ -1,0 +1,77 @@
+@use "breakpoints" as *;
+@use "colors" as *;
+
+html {
+  font-size: 7px;
+  scroll-padding-top: calc(10.2rem + 15px);
+}
+
+body {
+  background-color: $color-1;
+  color: $color-3;
+
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $color-1;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-3;
+    border-radius: 1.6rem;
+  }
+}
+
+
+.container {
+  width: 100%;
+  max-width: 1428px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+@media screen and (min-width: $phone-1) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media screen and (min-width: $phone-2) {
+  html {
+    font-size: 7.3px;
+  }
+}
+
+@media screen and (min-width: $phone-3) {
+  html {
+    font-size: 7.7px;
+  }
+}
+
+@media screen and (min-width: $phone-4) {
+  html {
+    font-size: 8.2px;
+  }
+}
+
+@media screen and (min-width: $tab-1) {
+  html {
+    font-size: 8.8px;
+  }
+}
+
+@media screen and (min-width: $desktop-1) {
+  html {
+    font-size: 9.5px;
+  }
+}
+
+@media screen and (min-width: $desktop-2) {
+  html {
+    font-size: 10px;
+  }
+}
