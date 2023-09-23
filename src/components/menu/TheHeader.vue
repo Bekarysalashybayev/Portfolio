@@ -47,8 +47,18 @@ watch(
 const goTo = (name: string) => {
   const element = document.getElementById(name)
 
+  if (isMobile.value) {
+    isOpen.value = false
+  }
+
   if (element) {
-    element.scrollIntoView({ behavior: 'smooth' })
+    if (isMobile.value) {
+      setTimeout(() => {
+        element.scrollIntoView({ behavior: 'smooth' })
+      }, 600)
+    } else {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
   } else {
     console.error(`Element with ID ${name} not found.`)
   }
