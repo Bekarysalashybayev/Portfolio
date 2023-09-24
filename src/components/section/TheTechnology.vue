@@ -5,7 +5,7 @@
       <div class="name">{{ el.name }}</div>
       <div class="level">{{ getLevelName(el.level) }}</div>
       <div class="range">
-        <div class="range-inner" :style="{ width: `${(el.level / 5) * 100}%` }"></div>
+        <div class="range-inner" :style="{ '--r-width': `${(el.level / 5) * 100}%` }"></div>
       </div>
     </div>
   </div>
@@ -18,7 +18,28 @@
   </div>
 </template>
 <script setup lang="ts">
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
+
+onMounted(() => {
+  const box = document.querySelector('.t-main')
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          box?.classList.add('ranged')
+          // box?.style.opacity = '1'
+          observer.unobserve(entry.target)
+        }
+      })
+    },
+    { threshold: 0.2 }
+  )
+
+  if (box) {
+    observer.observe(box)
+  }
+})
 
 const main_tech = ref<
   {
@@ -155,8 +176,14 @@ const getLevelName = (level: number) => {
         background: linear-gradient(to left, #13adc7, #6978d1, #945dd6);
         border-radius: 1rem;
         height: 100%;
+        width: 0;
+        transition: width linear 1s;
       }
     }
+  }
+
+  &.ranged .range-inner {
+    width: var(--r-width);
   }
 }
 

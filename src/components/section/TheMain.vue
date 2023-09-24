@@ -1,14 +1,25 @@
 <template>
   <div class="main" id="main">
     <div class="container">
-      <div class="title">Bekarys Alashybayev</div>
-      <div class="subtitle">
+      <div class="title animate__animated animate__lightSpeedInRight">Bekarys Alashybayev</div>
+      <div
+        class="subtitle animate__animated animate__lightSpeedInRight"
+        style="animation-delay: 1s"
+      >
         Hello there! I'm Bekarys, a passionate and creative frontend developer with a keen eye for
         design and a love for crafting exceptional user experiences. With 4 years of experience in
         the industry, I've had the privilege of working on diverse projects that have honed my
         skills and allowed me to grow as a developer.
       </div>
-      <be-button class="btn" @click="goTo('project')"> Let's begin</be-button>
+      <div class="animate__animated animate__lightSpeedInRight" style="animation-delay: 2s">
+        <be-button
+          class="btn animate__animated animate__pulse"
+          @click="goTo('project')"
+          style="animation-iteration-count: infinite; animation-delay: 4s"
+        >
+          Let's begin
+        </be-button>
+      </div>
     </div>
     <main-bg-icon class="icon" />
   </div>
