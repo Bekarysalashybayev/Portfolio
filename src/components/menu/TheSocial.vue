@@ -8,7 +8,7 @@
       <in-icon />
     </a>
 
-    <a href="#" target="_blank">
+    <a href="https://hh.kz/resume/7ad824c5ff05b690e40039ed1f325857616262" target="_blank">
       <h-h-icon />
     </a>
   </div>
