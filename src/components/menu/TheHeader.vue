@@ -2,10 +2,10 @@
   <header>
     <div class="container">
       <nav>
-        <the-logo class="n-logo mobile" />
+        <the-logo class="n-logo mobile" @click="goTo('main')" />
         <burger-button class="mobile" @click="isOpen = !isOpen" />
         <div :class="['nav-inner', isOpen && 'open']">
-          <the-logo class="n-logo desktop" />
+          <the-logo class="n-logo desktop" @click="goTo('main')" />
           <ul>
             <li @click="goTo('project')">Projects</li>
             <li @click="goTo('technologies')">Technologies</li>
@@ -46,13 +46,15 @@ watch(
 
 const goTo = (name: string) => {
   const element = document.getElementById(name)
+  let closed = false
 
   if (isMobile.value) {
     isOpen.value = false
+    closed = true
   }
 
   if (element) {
-    if (isMobile.value) {
+    if (isMobile.value && closed) {
       setTimeout(() => {
         element.scrollIntoView({ behavior: 'smooth' })
       }, 600)

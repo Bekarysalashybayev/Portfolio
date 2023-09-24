@@ -1,8 +1,13 @@
 <template>
-  <button>
+  <button @click="ocClick">
     <slot />
   </button>
 </template>
+
+<script setup lang="ts">
+const emit = defineEmits(['click'])
+const ocClick = () => emit('click')
+</script>
 
 <style scoped lang="scss">
 @use '@/assets/scss/colors' as *;

@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div class="main" id="main">
     <div class="container">
       <div class="title">Bekarys Alashybayev</div>
       <div class="subtitle">
@@ -8,7 +8,7 @@
         the industry, I've had the privilege of working on diverse projects that have honed my
         skills and allowed me to grow as a developer.
       </div>
-      <be-button class="btn"> Let's begin</be-button>
+      <be-button class="btn" @click="goTo('project')"> Let's begin</be-button>
     </div>
     <main-bg-icon class="icon" />
   </div>
@@ -17,6 +17,16 @@
 <script setup lang="ts">
 import BeButton from '@/components/ui/BeButton.vue'
 import MainBgIcon from '@/components/icons/MainBgIcon.vue'
+
+const goTo = (name: string) => {
+  const element = document.getElementById(name)
+
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' })
+  } else {
+    console.error(`Element with ID ${name} not found.`)
+  }
+}
 </script>
 
 <style scoped lang="scss">
