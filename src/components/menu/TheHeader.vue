@@ -9,7 +9,7 @@
           <ul>
             <li @click="goTo('project')">Projects</li>
             <li @click="goTo('technologies')">Technologies</li>
-            <li @click="goTo('technologies')">About me</li>
+            <li @click="goTo('about')">About me</li>
           </ul>
           <the-social class="social" />
         </div>

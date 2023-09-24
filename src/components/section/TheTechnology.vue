@@ -161,7 +161,7 @@ const getLevelName = (level: number) => {
 }
 
 .t-add {
-  margin-bottom: 5rem;
+  margin-bottom: 20rem;
   font-size: 2rem;
   font-weight: 550;
 
@@ -177,17 +177,18 @@ const getLevelName = (level: number) => {
     li {
       width: calc(25% - 3rem);
     }
+  }
 
-    @media screen and (max-width: $tab-1) {
-      li {
-        width: calc(33% - 3rem);
-      }
+  @media screen and (max-width: $tab-1) {
+    margin-bottom: 10rem;
+    ul li {
+      width: calc(33% - 3rem);
     }
+  }
 
-    @media screen and (max-width: $phone-4) {
-      li {
-        width: calc(50% - 1.5rem);
-      }
+  @media screen and (max-width: $phone-4) {
+    ul li {
+      width: calc(50% - 1.5rem);
     }
   }
 }
