@@ -48,16 +48,13 @@ const main_tech = ref<
   }[]
 >([
   {
-    name: 'Python',
-    level: 4
-  },
-  {
     name: 'JavaScript, TypeScript',
     level: 5
   },
+
   {
-    name: 'Java',
-    level: 3
+    name: 'Vue js, Nuxt js',
+    level: 5
   },
   {
     name: 'React js',
@@ -68,16 +65,24 @@ const main_tech = ref<
     level: 4
   },
   {
-    name: 'Vue js, Nuxt js',
-    level: 5
+    name: 'Express js',
+    level: 4
+  },
+  {
+    name: 'Python',
+    level: 4
   },
   {
     name: 'Django, DRF, Django ORM',
     level: 4
   },
   {
+    name: 'Java',
+    level: 3
+  },
+  {
     name: 'Spring Framework, Spring Boot',
-    level: 4
+    level: 3
   },
   {
     name: 'Html5',
@@ -99,21 +104,27 @@ const main_tech = ref<
 
 const techs = ref([
   'Git',
+  'Web socket',
+  'Socket.IO',
   'Docker',
   'Teamwork',
   'Bootstrap',
   'Vuetify',
+  'Material UI',
   'Axios',
   'Math',
   'CI/CD',
   'Rest API',
   'Vuex',
   'Pinia',
+  'Redux',
+  'MobX',
   'Storybook',
   'Nginx',
   'Pm2',
   'Gunicorn',
   'Celery',
+  'Redis',
   'Charts (Apex, Plotly, ...)',
   'Webpack',
   'Vite',

@@ -12,8 +12,8 @@
         <br />
         Fullstack developer
         <br />
-        Разработка web проекта. Разработка и поддержка веб-приложения на Vue.js и Nuxt.js Разработка
-        и поддержка API на Django и Django REST framework.
+        Development of a web project. Development and maintenance of a web application using Vue.js
+        and Nuxt.js. Development and maintenance of an API using Django and Django REST framework.
       </div>
     </div>
     <div class="item">
@@ -26,8 +26,9 @@
         <br />
         Fullstack developer
         <br />
-        Web studio. Разработка web проекта. Разработка и поддержка веб-приложения на Vue.js и
-        Nuxt.js Разработка и поддержка API на Django и Django REST framework.
+        Web Studio. Development of a web project. Development and maintenance of a web application
+        using Vue.js and Nuxt.js. Development and maintenance of an API using Django and Django REST
+        framework.
       </div>
     </div>
     <div class="item">
@@ -40,14 +41,14 @@
         <br />
         Fullstack developer
         <br />
-        Разработка и поддержка веб-приложения на Vue.js и Nuxt.js Разработка и поддержка API на
-        Django и Django REST framework. Разработка административных панелей/dashboard,
-        сбор/отображение сводки данных, в разрезе периодов.
+        Development and maintenance of a web application using Vue.js and Nuxt.js. Development and
+        maintenance of an API using Django and Django REST framework. Development of admin
+        panels/dashboards, data collection and display of summaries across different time periods.
       </div>
     </div>
     <div class="item">
       <div class="year">
-        2023
+        2023 - Present
         <div class="dot"></div>
       </div>
       <div class="text">
@@ -55,8 +56,10 @@
         <br />
         Frontend-разработчик
         <br />
-        Разработка и поддержка веб-приложения на Vue.js для онлайн автокредитов и товарных кредитов.
-        Поддержка/развитие/оптимизация продукта.
+        Development and maintenance of a web application using Vue.js for online auto loans and
+        consumer credit. Product support, development, and optimization. Migration of projects from
+        Vue 2 to Vue 3. Development of internal projects for product management and information
+        gathering (Admin panels, Dashboards).
       </div>
     </div>
   </div>

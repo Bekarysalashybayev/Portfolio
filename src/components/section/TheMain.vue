@@ -7,7 +7,7 @@
         style="animation-delay: 1s"
       >
         Hello there! I'm Bekarys, a passionate and creative frontend developer with a keen eye for
-        design and a love for crafting exceptional user experiences. With 4 years of experience in
+        design and a love for crafting exceptional user experiences. With 5 years of experience in
         the industry, I've had the privilege of working on diverse projects that have honed my
         skills and allowed me to grow as a developer.
       </div>

@@ -3,7 +3,7 @@
     <div class="container">
       <nav>
         <the-logo class="n-logo mobile" @click="goTo('main')" />
-        <burger-button class="mobile" @click="isOpen = !isOpen" />
+        <burger-button class="mobile-burger" v-model="isOpen" />
         <div :class="['nav-inner', isOpen && 'open']">
           <the-logo class="n-logo desktop" @click="goTo('main')" />
           <ul>
@@ -82,7 +82,8 @@ header {
   display: flex;
   align-items: center;
 
-  .mobile {
+  .mobile,
+  .mobile-burger {
     display: none;
   }
 
@@ -117,6 +118,10 @@ header {
       display: block;
     }
 
+    .mobile-burger {
+      display: flex;
+    }
+
     .desktop {
       display: none !important;
     }
@@ -138,7 +143,7 @@ header {
       justify-content: unset;
       overflow-y: auto;
       overflow-x: hidden;
-      transition: left linear 0.6s;
+      transition: left linear 0.2s;
 
       &.open {
         left: 0;

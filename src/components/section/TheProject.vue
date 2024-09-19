@@ -3,7 +3,7 @@
   <div class="projects">
     <div class="project">
       <div class="img">
-        <img src="@/assets/img/project-1.png" alt="" />
+        <img src="@/assets/img/project-1.png" loading="lazy" alt="" />
       </div>
       <div class="name">
         testhub.kz
@@ -17,7 +17,7 @@
     </div>
     <div class="project">
       <div class="img">
-        <img src="@/assets/img/project-2.png" alt="" />
+        <img src="@/assets/img/project-2.png" loading="lazy" alt="" />
       </div>
       <div class="name">
         ent.testhub.kz
@@ -31,7 +31,7 @@
     </div>
     <div class="project">
       <div class="img">
-        <img src="@/assets/img/project-3.png" alt="" />
+        <img src="@/assets/img/project-3.png" loading="lazy" alt="" />
       </div>
       <div class="name">
         koreanstreetfood.kz
@@ -45,7 +45,7 @@
     </div>
     <div class="project">
       <div class="img">
-        <img src="@/assets/img/project-4.png" alt="" />
+        <img src="@/assets/img/project-4.png" loading="lazy" alt="" />
       </div>
       <div class="name">
         juz40test.kz
@@ -55,11 +55,11 @@
         The #1 course that works for results. All subjects are taught by teachers who have become
         real specialists in their field.
       </div>
-      <a href="https://koreanstreetfood.kz/" target="blank">Look it up</a>
+      <a href="https://juz40test.kz/" target="blank">Look it up</a>
     </div>
     <div class="project">
       <div class="img">
-        <img src="@/assets/img/project-5.png" alt="" />
+        <img src="@/assets/img/project-5.png" loading="lazy" alt="" />
       </div>
       <div class="name">
         Corporate project
